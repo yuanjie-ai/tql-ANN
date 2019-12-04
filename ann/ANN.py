@@ -6,16 +6,6 @@
 # @Author       : yuanjie
 # @Email        : yuanjie@xiaomi.com
 # @Software     : PyCharm
-# @Description  : 
-
-# !/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Project      : tql-Python.
-# @File         : fdemo
-# @Time         : 2019-12-04 14:36
-# @Author       : yuanjie
-# @Email        : yuanjie@xiaomi.com
-# @Software     : PyCharm
 # @Description  :
 
 
