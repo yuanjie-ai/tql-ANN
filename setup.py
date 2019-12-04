@@ -14,7 +14,7 @@ import time
 from setuptools import find_packages, setup
 
 # rename
-package_name = 'ANN'
+package_name = 'fast-ann'
 project_name = 'tql-ANN'
 version = time.strftime("%Y.%m.%d.%H.%M.%S", time.localtime())
 

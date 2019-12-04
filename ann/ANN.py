@@ -8,7 +8,7 @@
 # @Software     : PyCharm
 # @Description  : 
 
-#!/usr/bin/env python
+# !/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Project      : tql-Python.
 # @File         : fdemo
@@ -54,10 +54,10 @@ class ANN(object):
 
         self.index = faiss.index_factory(*args)
 
-        if faiss.get_num_gpus() > 0:  # TODO部分索引类不支持GPU
+        if faiss.get_num_gpus() > 0:
             if any(index_factory.__contains__(i) for i in self.nogpu_index_factory):
                 pass
-                print(f"不支持GPU: {index_factory}")
+                print(f"Donot Support GPU: {index_factory}")
             else:
                 # gpu_index_flat = faiss.index_cpu_to_gpu(res, 0, index_flat)
                 self.index = faiss.index_cpu_to_all_gpus(self.index)
@@ -96,4 +96,3 @@ class ANN(object):
             return x / np.clip(x ** 2, 1e-12, None).sum(axis=1).reshape((-1, 1) + x.shape[2:]) ** 0.5
         else:
             return x / np.clip(x ** 2, 1e-12, None).sum() ** 0.5
-
